@@ -1,8 +1,8 @@
-[![Support Ukraine](https://img.shields.io/badge/Support-Ukraine-FFD500?style=flat&labelColor=005BBB)](https://opensource.fb.com/support-ukraine)  ![visitors](https://visitor-badge.laobi.icu/badge?page_id=LITL-Optimization)
+[![Support Ukraine](https://img.shields.io/badge/Support-Ukraine-FFD500?style=flat&labelColor=005BBB)](https://opensource.fb.com/support-ukraine)
 
 # LiDAR-in-the-loop Hyperparameter Optimization Simulator
 
-*by [Felix Antoine Goudreault](https://scholar.google.com/citations?user=DncgVscAAAAJ), [Dominik Scheuble](), [Mario Bijelic](http://mariobijelic.de), [Nicolas Robidoux](https://scholar.google.com/citations?user=Rd8f9jYAAAAJ) and [Felix Heide](https://www.cs.princeton.edu/~fheide/) <br>
+*by [Felix Antoine Goudreault](https://scholar.google.com/citations?user=DncgVscAAAAJ), Dominik Scheuble, [Mario Bijelic](http://mariobijelic.de), [Nicolas Robidoux](https://scholar.google.com/citations?user=Rd8f9jYAAAAJ) and [Felix Heide](https://www.cs.princeton.edu/~fheide/) <br>
 
 📣 Oral at [CVPR 2023](https://cvpr2023.thecvf.com/). <br>
 Please visit our [paper website](https://light.princeton.edu/publication/lidar-in-the-loop-hyperparameter-optimization/) for more details.
@@ -54,7 +54,7 @@ journal={Proceedings of the IEEE Conference on Computer Vision and Pattern Recog
 year={2023}
 }
 ```
-You may also want to check out our earlier works <br>
+You may also want to check out our earlier works: <br>
 [*Differentiable Compound Optics and Processing Pipeline Optimization for End-to-end Camera Design*](https://light.princeton.edu/publication/deep_compound_optics/).
 
 ```bibtex
@@ -123,11 +123,19 @@ pip install carla-0.9.13-cp38-cp38-linux_x86_64.whl
 
 ### Tutorials
 
-There are 3 notebooks in the [tutorials](tutorials) directory which explains in details how to use this repository.
+There are 3 notebooks in the [tutorials](tutorials) directory which explains in details how to use this repository. To run them, execute the following commands:
 
-1) [tutorials/part1_generate_raw_data.ipynb] explains how to generate raw data from the custom carla engine which can be downloaded using the link above. It also details how to run the docker image in order to visualize the scene from which the point clouds are generated in real time.
-2) [tutorials/part2_process_raw_data.ipynb] shows how to use the various models implemented in this repo in order to generate realistic point clouds.
-3) [tutorials/part3_gui.ipynb] discribes the special GUI developed to visualize the point clouds generated with this project.
+```bash
+# install jupyter notebooks
+pip install notebook
+# run jupyter in the tutorials directory
+# this will open a browser window from which you can select the desired notebook
+jupyter notebook tutorials
+```
+
+1) [part1_generate_raw_data.ipynb](part1_generate_raw_data.ipynb) explains how to generate raw data from the custom carla engine which can be downloaded using the link above. It also details how to run the docker image in order to visualize the scene from which the point clouds are generated in real time.
+2) [part2_process_raw_data.ipynb](part2_process_raw_data.ipynb) shows how to use the various models implemented in this repo in order to generate realistic point clouds.
+3) [part3_gui.ipynb](part3_gui.ipynb) discribes the special GUI developed to visualize the point clouds generated with this project.
 
 
 ### Disclaimer
@@ -141,3 +149,5 @@ Please feel free to suggest improvements to this repository.<br>
 We are always open to merge useful pull request.
 
 ## Acknowledgments
+
+This work was supported by the AISEE project with funding from the FFG, BMBF, and NRCIRA. We thank the Federal Ministry for Economic Affairs and Energy for support through the PEGASUS-family project VVM-Verification and Validation Methods for Automated Vehicles Level 4 and 5. Felix Heide was supported by an NSF CAREER Award (2047359), a Packard Foundation Fellowship, a Sloan Research Fellowship, a Sony Young Faculty Award, a Project X Innovation Award, and an Amazon Science Research Award.
