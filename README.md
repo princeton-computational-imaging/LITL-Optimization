@@ -1,5 +1,3 @@
-[![Support Ukraine](https://img.shields.io/badge/Support-Ukraine-FFD500?style=flat&labelColor=005BBB)](https://opensource.fb.com/support-ukraine)
-
 # LiDAR-in-the-loop Hyperparameter Optimization Simulator
 
 *by [Felix Antoine Goudreault](https://scholar.google.com/citations?user=DncgVscAAAAJ), Dominik Scheuble, [Mario Bijelic](http://mariobijelic.de), [Nicolas Robidoux](https://scholar.google.com/citations?user=Rd8f9jYAAAAJ) and [Felix Heide](https://www.cs.princeton.edu/~fheide/) <br>
