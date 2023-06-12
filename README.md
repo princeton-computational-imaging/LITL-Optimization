@@ -133,9 +133,9 @@ pip install notebook
 jupyter notebook tutorials
 ```
 
-1) [part1_generate_raw_data.ipynb](part1_generate_raw_data.ipynb) explains how to generate raw data from the custom carla engine which can be downloaded using the link above. It also details how to run the docker image in order to visualize the scene from which the point clouds are generated in real time.
-2) [part2_process_raw_data.ipynb](part2_process_raw_data.ipynb) shows how to use the various models implemented in this repo in order to generate realistic point clouds.
-3) [part3_gui.ipynb](part3_gui.ipynb) discribes the special GUI developed to visualize the point clouds generated with this project.
+1) [part 1](tutorials/part1_generate_raw_data.ipynb) explains how to generate raw data from the custom carla engine which can be downloaded using the link above. It also details how to run the docker image in order to visualize the scene from which the point clouds are generated in real time.
+2) [part 2](tutorials/part2_process_raw_data.ipynb) shows how to use the various models implemented in this repo in order to generate realistic point clouds.
+3) [part 3](tutorials/part3_gui.ipynb) discribes the special GUI developed to visualize the point clouds generated with this project.
 
 
 ### Disclaimer
