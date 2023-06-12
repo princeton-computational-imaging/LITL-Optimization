@@ -39,8 +39,8 @@ def main():
         errorbox = QMessageBox()
         errorbox.setIcon(QMessageBox.Critical)
         errorbox.setStandardButtons(QMessageBox.Close)
-        errorbox.setText("U DONUT! An error occured!")
-        errorbox.setWindowTitle("U PIG!")
+        errorbox.setText("An error occured!")
+        errorbox.setWindowTitle("Error")
         # taken from:
         # https://stackoverflow.com/a/35712784/6362595
         stack = ''.join(traceback.format_exception(etype=type(exc), value=exc, tb=exc.__traceback__))
