@@ -1,4 +1,4 @@
-[![Support Ukraine](https://img.shields.io/badge/Support-Ukraine-FFD500?style=flat&labelColor=005BBB)](https://opensource.fb.com/support-ukraine)  [![arXiv](https://img.shields.io/badge/arXiv-2203.15118-00ff00.svg)](https://arxiv.org/abs/2203.15118) ![visitors](https://visitor-badge.laobi.icu/badge?page_id=SysCV.LiDAR_snow_sim)
+[![Support Ukraine](https://img.shields.io/badge/Support-Ukraine-FFD500?style=flat&labelColor=005BBB)](https://opensource.fb.com/support-ukraine)  ![visitors](https://visitor-badge.laobi.icu/badge?page_id=LITL-Optimization)
 
 # LiDAR-in-the-loop Hyperparameter Optimization Simulator
 
