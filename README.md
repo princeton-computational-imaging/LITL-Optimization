@@ -154,6 +154,6 @@ year = {2021}
 Please feel free to suggest improvements to this repository.<br>
 We are always open to merge useful pull request.
 
-## Acknowledgments
+## Acknowledgements
 
 This work was supported by the AISEE project with funding from the FFG, BMBF, and NRCIRA. We thank the Federal Ministry for Economic Affairs and Energy for support through the PEGASUS-family project VVM-Verification and Validation Methods for Automated Vehicles Level 4 and 5. Felix Heide was supported by an NSF CAREER Award (2047359), a Packard Foundation Fellowship, a Sloan Research Fellowship, a Sony Young Faculty Award, a Project X Innovation Award, and an Amazon Science Research Award.
