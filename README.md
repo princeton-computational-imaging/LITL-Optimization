@@ -4,17 +4,18 @@
 
 *by [Felix Antoine Goudreault](https://scholar.google.com/citations?user=DncgVscAAAAJ), Dominik Scheuble, [Mario Bijelic](http://mariobijelic.de), [Nicolas Robidoux](https://scholar.google.com/citations?user=Rd8f9jYAAAAJ) and [Felix Heide](https://www.cs.princeton.edu/~fheide/) <br>
 
-📣 Oral at [CVPR 2023](https://cvpr2023.thecvf.com/). <br>
-Please visit our [paper website](https://light.princeton.edu/publication/lidar-in-the-loop-hyperparameter-optimization/) for more details.
+This is the official code repository for the [LiDAR-in-the-loop Hyperparameter Optimization](https://light.princeton.edu/publication/lidar-in-the-loop-hyperparameter-optimization/), to be presented at [CVPR 2023](https://cvpr2023.thecvf.com/). <br>
+This GitHub repository only contains the transient LiDAR simulator source code that was used to generate the realistic point cloud data. It does not contain the optimization algorithm and the object detector sources. The latter is based on the [OpenPCDet](https://github.com/open-mmlab/OpenPCDet) library.
 
 <img src="teaser.gif" width="850">
 
+## Requirements
 
-## Introduction
+This package requires a customized Carla engine docker image which can be downloaded [here](https://drive.google.com/file/d/1JS9PiQkcHp4Yepi2NTjjDyLXnfiWYBOj/view?usp=drive_link)
+and a corresponding carla python interface which can be installed from the [carla wheel file](carla-0.9.13-cp38-cp38-linux_x86_64.whl) located in this repository.
+Only python 3.8 is supported with this wheel and other python dependencies are listed in the [setup.cfg](setup.cfg) file (see [Installation](Installation) for more detailed setup instructions).
 
-This GitHub repository contains the transient LiDAR simulator source code that was used to generate the realistic point cloud data. It does not contain the optimization algorithm and the object detector sources. The latter is based on the [OpenPCDet](https://github.com/open-mmlab/OpenPCDet) library.
-
-## Overview
+## Project Structure
 
     .
     ├── litl_simulator             # contains our LiDAR simulator and viewers
@@ -37,8 +38,67 @@ This GitHub repository contains the transient LiDAR simulator source code that w
     ├── README.md
     └── teaser.gif
 
+## Getting Started
+
+### Setup
+
+1) Install [anaconda](https://docs.anaconda.com/anaconda/install/).
+
+2) Execute the following commands.
+```bash
+# Create a new conda environment.
+conda create --name litl_simulator python=3.8 -y
+
+# Activate the newly created conda environment.
+conda activate litl_simulator
+
+# Clone this repository (including submodules!).
+git clone git@github.com:princeton-computational-imaging/LITL-Optimization.git
+cd LITL-Optimization
+
+# Install packages
+pip install .
+
+# Install carla python interface
+pip install carla-0.9.13-cp38-cp38-linux_x86_64.whl
+```
+
+5) Download custom carla engine docker image [here](https://drive.google.com/file/d/1JS9PiQkcHp4Yepi2NTjjDyLXnfiWYBOj/view?usp=drive_link).
+
+6) Load carla image into docker registry.
+```bash
+docker load -i path/to/carla_image.tar.gz
+``
+
+7) Look at [tutorial part 1](tutorials/part1_generate_raw_data.ipynb) to run the custom carla engine.
+
+
+### Tutorials
+
+There are 3 notebooks in the [tutorials](tutorials) directory which explains in details how to use this repository. To run them, execute the following commands:
+
+```bash
+# install jupyter notebooks
+pip install notebook
+# run jupyter in the tutorials directory
+# this will open a browser window from which you can select the desired notebook
+jupyter notebook tutorials
+```
+
+1) [part 1](tutorials/part1_generate_raw_data.ipynb) explains how to generate raw data from the custom carla engine which can be downloaded using the link above. It also details how to run the docker image in order to visualize the scene from which the point clouds are generated in real time.
+2) [part 2](tutorials/part2_process_raw_data.ipynb) shows how to use the various models implemented in this repo in order to generate realistic point clouds.
+3) [part 3](tutorials/part3_gui.ipynb) discribes the special GUI developed to visualize the point clouds generated with this project.
+
+
+### Disclaimer
+
+The code has been successfully tested on
+- Ubuntu 18.04.6 and 20.04 LTS + CUDA 11.3 + python 3.8
+
+
 ## License
 
+TODO
 This software is made available for non-commercial use under a Creative Commons [License](LICENSE).<br>
 A summary of the license can be found [here](https://creativecommons.org/licenses/by-nc/4.0/).
 
@@ -92,57 +152,6 @@ booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Patte
 year = {2021}
 }
 ```
-
-## Getting Started
-
-### Setup
-
-1) Install [anaconda](https://docs.anaconda.com/anaconda/install/).
-
-2) Execute the following commands.
-```bash
-# Create a new conda environment.
-conda create --name litl_simulator python=3.8 -y
-
-# Activate the newly created conda environment.
-conda activate litl_simulator
-
-# Clone this repository (including submodules!).
-git clone git@github.com:princeton-computational-imaging/LITL-Optimization.git
-cd LITL-Optimization
-
-# Install packages
-pip install .
-
-# Install carla python interface
-pip install carla-0.9.13-cp38-cp38-linux_x86_64.whl
-```
-
-5) Enjoy
-
-
-### Tutorials
-
-There are 3 notebooks in the [tutorials](tutorials) directory which explains in details how to use this repository. To run them, execute the following commands:
-
-```bash
-# install jupyter notebooks
-pip install notebook
-# run jupyter in the tutorials directory
-# this will open a browser window from which you can select the desired notebook
-jupyter notebook tutorials
-```
-
-1) [part 1](tutorials/part1_generate_raw_data.ipynb) explains how to generate raw data from the custom carla engine which can be downloaded using the link above. It also details how to run the docker image in order to visualize the scene from which the point clouds are generated in real time.
-2) [part 2](tutorials/part2_process_raw_data.ipynb) shows how to use the various models implemented in this repo in order to generate realistic point clouds.
-3) [part 3](tutorials/part3_gui.ipynb) discribes the special GUI developed to visualize the point clouds generated with this project.
-
-
-### Disclaimer
-
-The code has been successfully tested on
-- Ubuntu 18.04.6 and 20.04 LTS + CUDA 11.3 + python 3.8
-
 
 ## Contributions
 Please feel free to suggest improvements to this repository.<br>
