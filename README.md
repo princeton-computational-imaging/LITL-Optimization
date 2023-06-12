@@ -2,8 +2,7 @@
 
 *by [Felix Antoine Goudreault](https://scholar.google.com/citations?user=DncgVscAAAAJ), Dominik Scheuble, [Mario Bijelic](http://mariobijelic.de), [Nicolas Robidoux](https://scholar.google.com/citations?user=Rd8f9jYAAAAJ) and [Felix Heide](https://www.cs.princeton.edu/~fheide/) <br>
 
-This is the official code repository for the [LiDAR-in-the-loop Hyperparameter Optimization](https://light.princeton.edu/publication/lidar-in-the-loop-hyperparameter-optimization/), to be presented at [CVPR 2023](https://cvpr2023.thecvf.com/). <br>
-This GitHub repository only contains the transient LiDAR simulator source code that was used to generate the realistic point cloud data. It does not contain the optimization algorithm and the object detector sources. The latter is based on the [OpenPCDet](https://github.com/open-mmlab/OpenPCDet) library.
+This is the official code repository for the [LiDAR-in-the-loop Hyperparameter Optimization](https://light.princeton.edu/publication/lidar-in-the-loop-hyperparameter-optimization/), to be presented at [CVPR 2023](https://cvpr2023.thecvf.com/). This GitHub repository only contains the transient LiDAR simulator source code that was used to generate the realistic point cloud data. It does not contain the optimization algorithm and the object detector sources. The latter is based on the [OpenPCDet](https://github.com/open-mmlab/OpenPCDet) library.
 
 <img src="teaser.gif" width="850">
 
@@ -11,7 +10,7 @@ This GitHub repository only contains the transient LiDAR simulator source code t
 
 This package requires a customized Carla engine docker image which can be downloaded [here](https://drive.google.com/file/d/1JS9PiQkcHp4Yepi2NTjjDyLXnfiWYBOj/view?usp=drive_link)
 and a corresponding carla python interface which can be installed from the [carla wheel file](carla-0.9.13-cp38-cp38-linux_x86_64.whl) located in this repository.
-Only python 3.8 is supported with this wheel and other python dependencies are listed in the [setup.cfg](setup.cfg) file (see [Installation](Installation) for more detailed setup instructions).
+Only python 3.8 is supported with this wheel and other python dependencies are listed in the [setup.cfg](setup.cfg) file (see [Installation](#Setup) for more detailed setup instructions).
 
 ## Project Structure
 
