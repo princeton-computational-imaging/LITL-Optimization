@@ -98,7 +98,7 @@ The code has been successfully tested on
 
 ## License
 
-This software is made available under the GPL v3 licence. See the [LICENCE][LICENCE] file for more info.
+This software is made available under the GPL v3 licence. See the [LICENCE](LICENCE) file for more info.
 
 ## Citation(s)
 
