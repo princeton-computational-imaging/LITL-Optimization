@@ -1,8 +1,9 @@
 # LiDAR-in-the-loop Hyperparameter Optimization Simulator
 
-*by [Felix Antoine Goudreault](https://scholar.google.com/citations?user=DncgVscAAAAJ), Dominik Scheuble, [Mario Bijelic](http://mariobijelic.de), [Nicolas Robidoux](https://scholar.google.com/citations?user=Rd8f9jYAAAAJ) and [Felix Heide](https://www.cs.princeton.edu/~fheide/) <br>
-
 This is the official code repository for the [LiDAR-in-the-loop Hyperparameter Optimization](https://light.princeton.edu/publication/lidar-in-the-loop-hyperparameter-optimization/), to be presented at [CVPR 2023](https://cvpr2023.thecvf.com/). This GitHub repository only contains the transient LiDAR simulator source code that was used to generate the realistic point cloud data. It does not contain the optimization algorithm and the object detector sources. The latter is based on the [OpenPCDet](https://github.com/open-mmlab/OpenPCDet) library.
+
+* :computer: [Website](https://light.princeton.edu/publication/lidar-in-the-loop-hyperparameter-optimization/)
+* :page_facing_up: [Paper](https://light.princeton.edu/wp-content/uploads/2023/04/LidarHyperparamOptimization.pdf)
 
 <img src="teaser.gif" width="850">
 
@@ -15,7 +16,7 @@ Only python 3.8 is supported with this wheel and other python dependencies are l
 ## Project Structure
 
     .
-    ├── litl_simulator             # contains our LiDAR simulator and viewers
+    ├── litl_simulator            # contains our LiDAR simulator and viewers
     │   ├── bases.py
     │   ├── data_descriptors.py
     │   ├── exceptions.py
@@ -153,7 +154,3 @@ year = {2021}
 ## Contributions
 Please feel free to suggest improvements to this repository.<br>
 We are always open to merge useful pull request.
-
-## Acknowledgements
-
-This work was supported by the AISEE project with funding from the FFG, BMBF, and NRCIRA. We thank the Federal Ministry for Economic Affairs and Energy for support through the PEGASUS-family project VVM-Verification and Validation Methods for Automated Vehicles Level 4 and 5. Felix Heide was supported by an NSF CAREER Award (2047359), a Packard Foundation Fellowship, a Sloan Research Fellowship, a Sony Young Faculty Award, a Project X Innovation Award, and an Amazon Science Research Award.
