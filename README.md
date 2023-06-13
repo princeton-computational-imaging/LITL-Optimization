@@ -1,3 +1,5 @@
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 # LiDAR-in-the-loop Hyperparameter Optimization Simulator
 
 This is the official code repository for the [LiDAR-in-the-loop Hyperparameter Optimization](https://light.princeton.edu/publication/lidar-in-the-loop-hyperparameter-optimization/), to be presented at [CVPR 2023](https://cvpr2023.thecvf.com/). This GitHub repository only contains the transient LiDAR simulator source code that was used to generate the realistic point cloud data. It does not contain the optimization algorithm and the object detector sources. The latter is based on the [OpenPCDet](https://github.com/open-mmlab/OpenPCDet) library.
@@ -96,10 +98,7 @@ The code has been successfully tested on
 
 ## License
 
-TODO
-This software is made available for non-commercial use under a Creative Commons [License](LICENSE).<br>
-A summary of the license can be found [here](https://creativecommons.org/licenses/by-nc/4.0/).
-
+This software is made available under the GPL v3 licence. See the [LICENCE][LICENCE] file for more info.
 
 ## Citation(s)
 
