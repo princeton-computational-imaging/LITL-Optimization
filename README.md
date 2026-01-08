@@ -63,7 +63,7 @@ pip install .
 pip install carla-0.9.13-cp38-cp38-linux_x86_64.whl
 ```
 
-5) Download custom carla engine docker image [here](https://drive.google.com/file/d/1JS9PiQkcHp4Yepi2NTjjDyLXnfiWYBOj/view?usp=drive_link).
+5) Download custom carla engine docker image [here](https://drive.google.com/file/d/1VMqpYB7aQGM7EDbFZuswdwmgzpgMT5FS/view?usp=share_link).
 
 6) Load carla image into docker registry.
 ```bash
